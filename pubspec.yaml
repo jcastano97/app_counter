@@ -1,0 +1,43 @@
+name: app_no_smoke
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.0
+  cupertino_icons: ^1.0.6
+  animations: ^2.0.0
+  get: ^4.6.6
+  get_storage: ^2.1.1
+  drift: ^2.18.0
+  sqlite3: ^2.4.0
+  sqlite3_flutter_libs: ^0.5.0
+  equatable: ^2.0.5
+  path_provider: ^2.0.0
+  path: ^1.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  drift_dev: ^2.18.0
+  build_runner: ^2.4.9
+  flutter_launcher_icons: ^0.9.0
+
+flutter:
+  assets:
+    - assets/images/
+    - assets/gifs/
+  uses-material-design: true
+  generate: true
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/icon.png"
